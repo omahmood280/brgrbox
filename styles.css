@@ -1,0 +1,356 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+.popup{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: orange;
+    width: 500px;
+    max-width: 80%;
+} 
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+.popup-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.popup-header .title{
+    font-size: 1.25rem;
+}
+.popup-header .close{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.popup-body{
+    padding: 10px 15px;
+}
+
+
+
+
+
+.nav-bar {
+    background-color: black; /* Match the background color */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav-bar .menu {
+font-size: 30px;
+color: orange;
+flex: 1;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+
+
+.nav-bar .contact {
+    font-size: 30px;
+    color: orange;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    }
+
+
+.nav-bar .title-box {
+    border: 8px solid white; /* Add the white border */
+    padding: 10px;
+}
+
+.title-box {
+    border: 2px solid white; /* Add the white border */
+    padding: 20px 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.nav-bar h1 {
+    font-size: 35px;
+    color: orange;
+    margin: 0;
+}
+
+.general-text{
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    font-weight: bold;
+}
+
+
+.general-text1{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    font-weight: bold;
+}
+
+
+
+.container{
+    height: 120px;
+    width: 300px;
+    border-radius: 50%;
+    background: orange;
+    position: absolute;
+
+}
+
+
+.burger-image {
+    display: block;
+    max-width: 100%; 
+    
+}
+
+.extra-image1{
+border-radius: 1rem;
+margin-left: 4rem;
+width: 38%;
+}
+.extra-image2{
+    border-radius: 1rem;
+    float: right;
+    margin-right: 4rem;
+    width: 38%;
+}
+
+
+
+.order-links{
+    display: flex;
+justify-content: center;
+    column-gap: 130px;
+}
+.uber-image{
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px;
+
+    
+
+}
+.justeat-image{
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px; 
+
+}
+.deliveroo-image{
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+
+
+
+/* Banner styles */
+.opening-banner {
+    text-align: center;
+    background-color: orange;
+    color: black;
+    padding: 1px;
+}
+
+.our-banner {
+    text-align: center;
+    background-color: orange;
+    color: black;
+    padding: 48px;
+    padding-top: 19px;
+    padding-bottom: 0px;
+    display: table;
+    margin: 0 auto;
+    border-radius: 25px;
+
+}
+
+
+footer.contact-banner {
+    background-color: orange;
+    color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.contact-info {
+    color: black;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+
+
+/* Mobile-first approach */
+/* Adjust styles for smaller screens */
+
+
+@media all and (max-width: 800px) 
+
+  {
+    .title-box {
+        border: 2px solid white; /* Add the white border */
+        padding: 8px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+.general-text1{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.extra-images{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-width: 100%;
+    
+}
+.extra-image1{
+border-radius: 1rem;
+margin-left: 0px;
+width: 100%;
+
+}
+.extra-image2{
+    border-radius: 1rem;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.order-links{
+    display: flex;
+    column-gap: 30px;
+}
+
+.uber-image{
+    border-radius: 1rem;
+    width: 90px;
+    height: 90px;
+
+    
+
+}
+.justeat-image{
+    border-radius: 1rem;
+    width: 90px;
+    height: 90px; 
+
+}
+.deliveroo-image{
+    border-radius: 1rem;
+    width: 90px;
+    height: 90px;
+
+
+}
+
+.burger-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+    a:link {
+        text-decoration: none; 
+       }
+   
+    .nav-bar {
+        background-color: black; /* Match the background color */
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0px;
+
+    }
+
+    .nav-bar .menu {
+        font-size: 40px;
+        color: orange;
+        order: 2;
+        border: 2px solid orange;
+        width: 100%;
+        }
+        
+        .nav-bar .contact {
+            order: 3;
+            font-size: 40px;
+            color: orange;
+            border: 2px solid orange;
+            width: 100%;
+
+
+            }
+            .general-text{
+                font-size: 20px;
+                color: orange;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                font-weight: bold;
+            }
+
+            .mobile-break { display: none; }
+
+
+}
+
+@media all and (max-width: 1050px) and (min-width: 750px)
+
+  {
+    .title-box {
+        border: 2px solid white; /* Add the white border */
+        padding: 8px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
