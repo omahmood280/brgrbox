@@ -169,13 +169,21 @@ justify-content: center;
     padding: 48px;
     padding-top: 19px;
     padding-bottom: 0px;
-    display: table;
+    display: flex;
     margin: 0 auto;
     background: none;
     border-bottom: 2px solid white;
+    margin-left: 34%;
+    margin-right: 34%;
     font-size: 23px;
 
 
+}
+.halal-image{
+width: 70px;
+height: 70px;
+margin-top: 14px;
+margin-left: 20px;
 }
 
 .delivery-banner {
