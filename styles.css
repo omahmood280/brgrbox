@@ -170,9 +170,7 @@ justify-content: center;
     padding: 48px;
     padding-top: 19px;
     padding-bottom: 0px;
-    display: flex;
     align-items: center;
-
     margin: 0 auto;
     background: none;
     border-bottom: 2px solid white;
@@ -183,10 +181,12 @@ justify-content: center;
 
 }
 .halal-image{
-width: 70px;
-height: 70px;
-margin-top: 14px;
-}
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+
+    }
 
 .delivery-banner {
     text-align: center;
@@ -271,28 +271,26 @@ footer.contact-banner {
 }
 
 .our-banner{
-    text-align: center;
     color: orange;
-    padding: 48px;
     padding-top: 19px;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background: none;
     border-bottom: 2px solid white;
     font-size: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
 
-    
 }
+
 
 .halal-image{
     width: 70px;
     height: 70px;
-    
+    display: block;
+    margin: 0 auto;
+
     }
 
 video{
