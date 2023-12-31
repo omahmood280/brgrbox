@@ -147,6 +147,7 @@ justify-content: center;
     width: 200px;
     height: 200px;
 
+    
 
 }
 
@@ -170,6 +171,8 @@ justify-content: center;
     padding-top: 19px;
     padding-bottom: 0px;
     display: flex;
+    align-items: center;
+
     margin: 0 auto;
     background: none;
     border-bottom: 2px solid white;
@@ -183,7 +186,6 @@ justify-content: center;
 width: 70px;
 height: 70px;
 margin-top: 14px;
-margin-left: 20px;
 }
 
 .delivery-banner {
@@ -268,6 +270,31 @@ footer.contact-banner {
     font-weight: bold;
 }
 
+.our-banner{
+    text-align: center;
+    color: orange;
+    padding: 48px;
+    padding-top: 19px;
+    padding-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+}
+
+.halal-image{
+    width: 70px;
+    height: 70px;
+    
+    }
+
 video{
     display: block;
 margin: 0 auto;
@@ -310,27 +337,28 @@ width: 100%;
 
 .order-links{
     display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
 .uber-image{
     border-radius: 1rem;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 
     
 
 }
 .justeat-image{
     border-radius: 1rem;
-    width: 90px;
-    height: 90px; 
+    width: 70px;
+    height: 70px; 
 
 }
 .deliveroo-image{
     border-radius: 1rem;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 
 
 }
@@ -369,7 +397,7 @@ width: 100%;
 
         
 
-@media all and (max-width: 1050px) and (min-width: 750px)
+@media all and (max-width: 950px) and (min-width: 500px)
 
   {
     .title-box {
@@ -378,4 +406,8 @@ width: 100%;
         margin-left: 0px;
         margin-right: 0px;
     }
+    .halal-image{
+
+
+        }
   }
