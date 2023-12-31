@@ -4,50 +4,51 @@ body {
     color: white;
     background-color: black;
 }
-.popup{
-    position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: orange;
-    width: 500px;
-    max-width: 80%;
-} 
-
-.popup.active{
-    transform: translate(-50%, -50%) scale(1);
+.logo{
+    width: 23%;
+    margin: 0 auto;
 
 }
-
-
-.popup-header{
-    padding: 10px 15px;
+.logos{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
+    justify-content: center;
 }
 
-.popup-header .title{
-    font-size: 1.25rem;
-}
-.popup-header .close{
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-.popup-body{
-    padding: 10px 15px;
+.logos .tiktok-image{
+    width: 40px;
+    height: 40px;
+
+}.logos .insta-image{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+
+}.logos .facebook-image{
+    width: 40px;
+    height: 40px;
+
 }
 
+.logos .snap-image{
+    width: 67px;
+    height: 40px;
+
+}
+
+.welcome-image{
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
 
 
+}
+
+video{
+    display: block;
+margin: 0 auto;
+width: 80%;
+}
 
 
 .nav-bar {
@@ -61,14 +62,15 @@ body {
 }
 
 
-.nav-bar .menu {
-font-size: 30px;
-color: orange;
-flex: 1;
-}
 a:link { 
     text-decoration: none; 
+    color: black;
   } 
+  a:visited { 
+    text-decoration: none; 
+    color: black;
+  } 
+
 
 
 .nav-bar .contact {
@@ -87,7 +89,7 @@ a:link {
 }
 
 .title-box {
-    border: 2px solid white; /* Add the white border */
+    border: 7px solid white; /* Add the white border */
     padding: 20px 0px;
     margin-left: 100px;
     margin-right: 100px;
@@ -110,7 +112,7 @@ a:link {
 
 
 .general-text1{
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     text-align: center;
     margin-left: 130px;
@@ -136,16 +138,24 @@ a:link {
     
 }
 
+.extra-images{
+    display: flex;
+}
+.extra-image3{
+    border-radius: 1rem;
+margin: 0 auto;
+width: 33%;    
+}
+
 .extra-image1{
 border-radius: 1rem;
-margin-left: 4rem;
-width: 38%;
+float: left;
+width: 33%;
 }
 .extra-image2{
     border-radius: 1rem;
     float: right;
-    margin-right: 4rem;
-    width: 38%;
+    width: 33%;
 }
 
 
@@ -191,15 +201,55 @@ justify-content: center;
 .our-banner {
     text-align: center;
     background-color: orange;
+    color: orange;
+    padding: 48px;
+    padding-top: 19px;
+    padding-bottom: 0px;
+    display: table;
+    margin: 0 auto;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 23px;
+
+
+}
+
+.our-banner3 {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding: 48px;
+    padding-top: 19px;
+    padding-bottom: 0px;
+    display: table;
+    margin: 0 auto;
+    background: none;
+    border-bottom: 2px solid white;
+
+
+}
+
+.our-banner1 {
+    text-align: center;
+    background-color: orange;
     color: black;
     padding: 48px;
     padding-top: 19px;
+    padding-left: 75px;
+    padding-right: 75px;
+
     padding-bottom: 0px;
     display: table;
     margin: 0 auto;
     border-radius: 25px;
 
 }
+.our-banner1 a:link{
+    text-decoration: none;
+}
+
+
+
 
 
 footer.contact-banner {
@@ -231,7 +281,7 @@ footer.contact-banner {
 
   {
     .title-box {
-        border: 2px solid white; /* Add the white border */
+        border: 7px solid white; /* Add the white border */
         padding: 8px 0px;
         margin-left: 0px;
         margin-right: 0px;
@@ -252,6 +302,7 @@ footer.contact-banner {
     row-gap: 15px;
     max-width: 100%;
     
+
 }
 .extra-image1{
 border-radius: 1rem;
@@ -263,6 +314,11 @@ width: 100%;
     border-radius: 1rem;
     margin-right: 0px;
     width: 100%;
+}
+
+.extra-image3{
+    
+width: 100%;
 }
 
 .order-links{
@@ -297,6 +353,9 @@ width: 100%;
     height: 190px;
     object-fit: cover;
 }
+.logo{
+    width: 60%;
+}
 
 
     a:link {
@@ -314,6 +373,7 @@ width: 100%;
     }
 
     .nav-bar .menu {
+        display: block;
         font-size: 40px;
         color: orange;
         order: 2;
@@ -348,7 +408,7 @@ width: 100%;
 
   {
     .title-box {
-        border: 2px solid white; /* Add the white border */
+        border: 7px solid white; /* Add the white border */
         padding: 8px 0px;
         margin-left: 0px;
         margin-right: 0px;
