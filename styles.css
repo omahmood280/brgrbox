@@ -21,7 +21,7 @@ body {
 }.logos .insta-image{
     width: 40px;
     height: 40px;
-    margin-left: 15px;
+    margin-left: 16px;
 
 }.logos .facebook-image{
     width: 40px;
@@ -30,7 +30,7 @@ body {
 }
 
 .logos .snap-image{
-    width: 67px;
+    width: 69px;
     height: 40px;
 
 }
@@ -48,6 +48,7 @@ video{
     display: block;
 margin: 0 auto;
 width: 80%;
+border-radius: 1rem;
 }
 
 
@@ -72,33 +73,11 @@ a:link {
   } 
 
 
-
-.nav-bar .contact {
-    font-size: 30px;
-    color: orange;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    flex: 1;
-    }
-
-
-.nav-bar .title-box {
-    border: 8px solid white; /* Add the white border */
-    padding: 10px;
-}
-
 .title-box {
     border: 7px solid white; /* Add the white border */
     padding: 20px 0px;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-.nav-bar h1 {
-    font-size: 35px;
-    color: orange;
-    margin: 0;
 }
 
 .general-text{
@@ -111,7 +90,7 @@ a:link {
 }
 
 
-.general-text1{
+.halal-message{
     font-size: 24px;
     color: white;
     text-align: center;
@@ -122,37 +101,21 @@ a:link {
 
 
 
-.container{
-    height: 120px;
-    width: 300px;
-    border-radius: 50%;
-    background: orange;
-    position: absolute;
-
-}
-
-
-.burger-image {
-    display: block;
-    max-width: 100%; 
-    
-}
-
-.extra-images{
+.food-images{
     display: flex;
 }
-.extra-image3{
+.pizza-image1{
     border-radius: 1rem;
 margin: 0 auto;
 width: 33%;    
 }
 
-.extra-image1{
+.burger-image1{
 border-radius: 1rem;
 float: left;
 width: 33%;
 }
-.extra-image2{
+.shawarma-image1{
     border-radius: 1rem;
     float: right;
     width: 33%;
@@ -196,11 +159,12 @@ justify-content: center;
     background-color: orange;
     color: black;
     padding: 1px;
+    padding-bottom: 8px;
+
 }
 
 .our-banner {
     text-align: center;
-    background-color: orange;
     color: orange;
     padding: 48px;
     padding-top: 19px;
@@ -214,7 +178,7 @@ justify-content: center;
 
 }
 
-.our-banner3 {
+.delivery-banner {
     text-align: center;
     background-color: orange;
     color: white;
@@ -229,7 +193,7 @@ justify-content: center;
 
 }
 
-.our-banner1 {
+.menu-button {
     text-align: center;
     background-color: orange;
     color: black;
@@ -287,7 +251,7 @@ footer.contact-banner {
         margin-right: 0px;
     }
 
-.general-text1{
+.halal-message{
     font-size: 20px;
     color: white;
     text-align: center;
@@ -296,7 +260,22 @@ footer.contact-banner {
     font-weight: bold;
 }
 
-.extra-images{
+video{
+    display: block;
+margin: 0 auto;
+width: 89%;
+border-radius: 1rem;
+}
+
+.welcome-image{
+    width: 89%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+
+}
+
+.food-images{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
@@ -304,19 +283,19 @@ footer.contact-banner {
     
 
 }
-.extra-image1{
+.burger-image1{
 border-radius: 1rem;
 margin-left: 0px;
 width: 100%;
 
 }
-.extra-image2{
+.shawarma-image1{
     border-radius: 1rem;
     margin-right: 0px;
     width: 100%;
 }
 
-.extra-image3{
+.pizza-image1{
     
 width: 100%;
 }
@@ -348,11 +327,6 @@ width: 100%;
 
 }
 
-.burger-image {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
 .logo{
     width: 60%;
 }
@@ -371,25 +345,7 @@ width: 100%;
         gap: 15px 0px;
 
     }
-
-    .nav-bar .menu {
-        display: block;
-        font-size: 40px;
-        color: orange;
-        order: 2;
-        border: 2px solid orange;
-        width: 100%;
-        }
-        
-        .nav-bar .contact {
-            order: 3;
-            font-size: 40px;
-            color: orange;
-            border: 2px solid orange;
-            width: 100%;
-
-
-            }
+   
             .general-text{
                 font-size: 20px;
                 color: orange;
@@ -401,8 +357,9 @@ width: 100%;
 
             .mobile-break { display: none; }
 
+        }
 
-}
+        
 
 @media all and (max-width: 1050px) and (min-width: 750px)
 
