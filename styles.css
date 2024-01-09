@@ -127,30 +127,24 @@ width: 33%;
 
 
 .order-links{
-    display: flex;
-justify-content: center;
-    column-gap: 130px;
+    text-align: center;
 }
 .uber-image{
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
-
+    width: 13%;
     
 
 }
 .justeat-image{
     border-radius: 1rem;
-    width: 200px;
-    height: 200px; 
+    width: 13%;
 
 }
 .deliveroo-image{
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
-
-    
+    width: 13%;
+    margin-left: 2%;
+ 
 
 }
 
@@ -329,39 +323,21 @@ width: 100%;
     margin-right: 0px;
     width: 100%;
 }
+.deliveroo-image{
+    width: 24%;
+}
+.uber-image{
+    width: 24%;
+}
+.justeat-image{
+    width: 24%;
+}
 
 .pizza-image1{
     
 width: 100%;
 }
 
-.order-links{
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-}
-
-.uber-image{
-    border-radius: 1rem;
-    width: 70px;
-    height: 70px;
-
-    
-
-}
-.justeat-image{
-    border-radius: 1rem;
-    width: 70px;
-    height: 70px; 
-
-}
-.deliveroo-image{
-    border-radius: 1rem;
-    width: 70px;
-    height: 70px;
-
-
-}
 
 .logo{
     width: 60%;
