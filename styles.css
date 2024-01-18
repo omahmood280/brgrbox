@@ -197,6 +197,11 @@ width: 33%;
 
 }
 
+.menu-button a img {
+    width: 100%;
+}
+
+
 .menu-button {
     text-align: center;
     background-color: orange;
