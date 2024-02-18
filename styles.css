@@ -9,8 +9,7 @@ body {
     margin: 0 auto;
 
 }
-.logos{
-}
+
 
 .logos .tiktok-image{
     width: 40px;
@@ -72,6 +71,7 @@ a:link {
   } 
 
 
+
 .title-box {
     border: 7px solid white; /* Add the white border */
     padding: 20px 0px;
@@ -98,27 +98,47 @@ a:link {
     font-weight: bold;
 }
 
+.slider1{
+    
+    margin: auto;
+    width: 90%;
+    overflow-x: clip;
+    white-space: nowrap;
 
+}
+
+@keyframes scroller {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(calc(-444px*11) - 51px));
+    }
+}
+
+.duplicated-wrapper {
+    margin-right: 4px; /* Adjust the margin according to your desired gap */
+    display: inline-block; /* Ensures each wrapper is displayed in a line */
+}
 
 .food-images{
-    display: flex;
-}
-.pizza-image1{
-    border-radius: 1rem;
-margin: 0 auto;
-width: 33%;    
+    display: inline-block;
+animation: scroller 52s linear infinite;
+animation-direction: reverse;
 }
 
-.burger-image1{
+
+
+.food-images img{
+    height: 250px;
+    width: 444px;
 border-radius: 1rem;
-float: left;
-width: 33%;
+transition: transform 0.2s ease;
+
 }
-.shawarma-image1{
-    border-radius: 1rem;
-    float: right;
-    width: 33%;
-}
+
 
 
 
@@ -126,11 +146,17 @@ width: 33%;
     text-align: center;
 }
 .uber-image{
+    animation: fadeIn 5s; 
     border-radius: 1rem;
     width: 200px;
     height: 200px;
 
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 .justeat-image{
     border-radius: 1rem;
     width: 200px;
@@ -245,6 +271,8 @@ footer.contact-banner {
 
 
 
+
+
 /* Mobile-first approach */
 /* Adjust styles for smaller screens */
 
@@ -257,6 +285,23 @@ footer.contact-banner {
         padding: 8px 0px;
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .food-images img{
+        height: 125px;
+        width: 222px;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+    }
+
+    @keyframes scroller {
+
+        0%{
+            transform: translateX(0);
+        }
+    
+        100%{
+            transform: translateX(calc(calc(-222px*11) - 51px));
+        }
     }
 
 .halal-message{
@@ -306,14 +351,6 @@ border-radius: 1rem;
 
 }
 
-.food-images{
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    max-width: 100%;
-    
-
-}
 .burger-image1{
 border-radius: 1rem;
 margin-left: 0px;
@@ -388,4 +425,8 @@ width: 100%;
         margin-right: 0px;
     }
 
+
   }
+
+    
+    
