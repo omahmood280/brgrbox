@@ -74,6 +74,8 @@ images.forEach((image) => {
         });
 
     image.addEventListener('touchstart', (event) => {
+        event.preventDefault();
+
                 image.style.position = 'relative';
         image.style.zIndex = '1';
         image.style.transform = 'scale(1.5)'
@@ -81,12 +83,15 @@ images.forEach((image) => {
 });
 
 slider.addEventListener("touchend", (event) => {
+    event.preventDefault();
     const foodImages = document.querySelector('.food-images');
     foodImages.style.animationPlayState = 'running';
 
 });
 
 slider.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+
     const foodImages = document.querySelector('.food-images');
     foodImages.style.animationPlayState = 'paused';
 });
