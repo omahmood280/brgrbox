@@ -146,10 +146,9 @@ transition: transform 0.2s ease;
     text-align: center;
 }
 .uber-image{
-    animation: fadeIn 5s; 
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 
 }
 @keyframes fadeIn {
@@ -159,15 +158,15 @@ transition: transform 0.2s ease;
   
 .justeat-image{
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 
 
 }
 .deliveroo-image{
     border-radius: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
  
 
 }
@@ -363,16 +362,16 @@ width: 100%;
     width: 100%;
 }
 .deliveroo-image{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 .uber-image{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 .justeat-image{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 .pizza-image1{
