@@ -1,5 +1,9 @@
 /* General styles */
 body {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
@@ -9,6 +13,49 @@ body {
     margin: 0 auto;
 
 }
+.content {
+    margin: 0 auto;
+    width: 88%;
+    height: 35%;
+    
+}
+
+.swiper-button-prev,
+  .swiper-button-next {
+color: white !important;
+  }
+
+
+.swiper-container {
+    margin: 0 auto;
+    height: 35%;
+    width: 94%;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+
+  }
+  .swiper-slide {
+  }
+  
+.slick-prev:before,
+.slick-next:before {
+}
+
+.slider img{
+    object-fit:contain;
+    border-radius: 1rem;
+
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+
+  }
+
 
 
 .logos .tiktok-image{
@@ -73,10 +120,10 @@ a:link {
 
 
 .title-box {
+    width: 90%;
     border: 7px solid white; /* Add the white border */
     padding: 20px 0px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 auto;
 }
 
 .general-text{
@@ -271,19 +318,71 @@ footer.contact-banner {
 
 
 
-
 /* Mobile-first approach */
 /* Adjust styles for smaller screens */
+@media all and (max-width: 800px) and (min-width:500px) {
+    .swiper-container {
+        height: 33% !important;
+
+      }
+}
+
+@media all and (max-width: 985px) and (min-width:650px) {
+    .content {
+        margin: 0 auto;
+        width: 92%;
+        height: 25%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 12px !important;
+    }
+    
+    .slick-slide {
+        margin: 0 2px;
+      }
+    .slider img{
+        object-fit: cover;
+    }
+}
+@media all and (max-width:650px) {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        height: 17%;
+    }
+    .slick-list{padding:0 20% 0 20% !important;}
+
+    
+    .slick-slide {
+        margin: 0 2px;
+      }
+    .slider img{
+        object-fit: cover;
+    }
+}
 
 
 @media all and (max-width: 800px) 
 
   {
+
+.swiper-button-prev,
+.swiper-button-next {
+display: none !important;
+}
+
+    .swiper-container {
+        margin: 0 auto;
+        height: 17%;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
     .title-box {
+        margin: 0 auto;
         border: 7px solid white; /* Add the white border */
         padding: 8px 0px;
-        margin-left: 0px;
-        margin-right: 0px;
     }
     .food-images img{
         height: 125px;
@@ -420,8 +519,7 @@ width: 100%;
     .title-box {
         border: 7px solid white; /* Add the white border */
         padding: 8px 0px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 0 auto;
     }
 
 

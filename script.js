@@ -1,3 +1,43 @@
+var mq = window.matchMedia( "(max-width: 650px)" );
+if (mq.matches) {
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1.5,
+        spaceBetween: 4,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}
+else{
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 4,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+}
+
+document.getElementById("arrow").addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
 const scrollers = document.querySelectorAll(".slider1")
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
@@ -8,7 +48,7 @@ function AddAnimation(){
 scrollers.forEach((scroller)=>{
     scroller.setAttribute("data-animated", true);
 
-    const scrollerInner = scroller.querySelector('.food-images');
+    const scrollerInner = scroller.querySelector('.slider-images');
     const scrollerContent = Array.from(scrollerInner.children);
 
     scrollerContent.forEach(item => {
