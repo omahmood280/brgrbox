@@ -1,0 +1,25 @@
+
+body{
+    margin: 0;
+}
+
+.phone-menu{
+        display: none;
+        }
+.menu {
+    width: 100%;
+    display:block;
+    }
+
+
+
+@media all and (max-width: 800px) {
+        .phone-menu{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        }
+        .menu{
+            display: none;
+        }
+    }
