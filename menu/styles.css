@@ -1,6 +1,9 @@
 
 body{
     margin: 0;
+    font-family: Arial, sans-serif;
+font-size: 12px;
+
 }
 
 .phone-menu{
@@ -11,15 +14,77 @@ body{
     display:block;
     }
 
+    footer.contact-banner {
+        background-color: orange;
+        color: black;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        
+    }
+    
+    .contact-info {
+        color: black;
+    }
+    
+    .contact-info h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    .logos .tiktok-image{
+        width: 40px;
+        height: 40px;
+    
+    }.logos .insta-image{
+        width: 40px;
+        height: 40px;
+    
+    }.logos .facebook-image{
+        width: 40px;
+        height: 40px;
+    
+    }
+    
+    .logos .snap-image{
+        width: 40px;
+        height: 40px;
+    }    
+    a:link {
+        text-decoration: none; 
+       }
+
+       @media all and (min-width: 800px) {
+        body{
+
+        font-size: 15px;
+        
+        }
+        
+               
+    }
 
 
 @media all and (max-width: 800px) {
         .phone-menu{
         display: block;
         width: 100%;
-        object-fit: cover;
+        object-fit: cover; /* Ensure the entire image is visible, without cropping */
+     
         }
         .menu{
             display: none;
         }
+               
     }
+
+    @media all and (max-width: 352px){
+        footer.contact-banner {
+
+            padding: 70px 0;
+
+            
+        }
+    }
+
